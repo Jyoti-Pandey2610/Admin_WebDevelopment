@@ -9,10 +9,12 @@ import { LoginService } from 'src/app/services/login.service';
 })
 export class NavbarComponent implements OnInit {
   
+  
   constructor(private router: Router, public loginService: LoginService) { 
   }
 
   ngOnInit(): void {
+    
   }
 
   onLogin() {
@@ -22,6 +24,18 @@ export class NavbarComponent implements OnInit {
   onLogout() {
     localStorage.setItem("isLoggedIn", "false");
     this.router.navigate(['/login']);
+  }
+
+  toHome(){
+    document.getElementById('Home');
+  }
+
+  toAbout(){
+    document.getElementById('About');
+  }
+
+  toContact(){
+    document.getElementById('contact');
   }
 
 }

@@ -5,11 +5,14 @@
 		<div id="flip"><p>Menu</p></div>
 		<nav id="nav">
 			<ul>
-				<li class="active"><a routerLink="home">Home</a></li>
-				<li><a  id = "About" routerLink="home">About</a></li>
-				<li><a href="signup">Sign-Up</a></li>
-                <li *ngIf="!loginService.isLoggedIn()"><a (click)="onLogin()">Login</a></li>
+				<li (click)="toHome()"><a routerLink="home" routerLinkActive="active">Home</a></li>
+				<li (click)="toAbout()"><a  id = "About" routerLink="about">About-Us</a></li>
+				<li (click)="toContact()"><a  id = "contact" routerLink="contactUs">Contact-Us</a></li>
+				<!-- <li><a href="signup">Sign-Up</a></li> -->
+                <li *ngIf="!loginService.isLoggedIn()"><a (click)="onLogin()">Admin</a></li>
 				<li *ngIf="loginService.isLoggedIn()"><a (click)="onLogout()">Logout</a></li>
+				<li ><a  id = "doctor" routerLink="doctor">Doctor</a></li>
+				
 				
 			</ul>
 		</nav>

@@ -1,11 +1,35 @@
-#homePage{
-    background-image: url("src/assets/img1.jpg");
-    padding-bottom: 505px;
-    
+*{
+    font-family: 'Poppins', sans-serif;
 }
 
-.emergency-alert {
-    font-family: "Open Sans",sans-serif;
-    background-color: #fe0;
-    color: #000;
+.card{
+    background-color: transparent !important;
+    display: flex;
+}
+
+.card-img{
+    width: 1300px;
+    height: 500px;
+    padding-left: 15px;
+}
+
+.card-img-overlay{
+    padding-left: 70px;
+}
+
+.glow{
+    color: black;
+}
+
+.emergency{
+    padding-left: 300px;
+    padding-top: 330px;
+}
+
+a{
+    color: black;
+}
+.signin{
+    margin-top: -60px;
+    padding-left: 800px;
 }

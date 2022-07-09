@@ -5,6 +5,9 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { AuthGuard } from './services/auth.guard';
 import {SignupComponent} from './components/signup/signup.component';
+import { LandingPageComponent } from './components/about/landing-page.component';
+import {DoctorComponent} from './components/doctor/doctor.component'
+import {ContactUsComponent} from './components/contact-us/contact-us.component'
 
 const routes: Routes = [
 	{
@@ -30,6 +33,21 @@ const routes: Routes = [
 	{
 		path: 'signup',
 		component: SignupComponent,
+		pathMatch: "full"
+	},
+	{
+		path: 'about',
+		component: LandingPageComponent,
+		pathMatch: "full"
+	},
+	{
+		path: 'doctor',
+		component: DoctorComponent,
+		pathMatch: "full"
+	},
+	{
+		path: 'contactUs',
+		component: ContactUsComponent,
 		pathMatch: "full"
 	}
 ];
