@@ -8,6 +8,11 @@ import { UserService } from './services/user.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
   title = 'PatientApp';
+  someHTML ='Some HTML <script> alert("hello"); </script>'
+  myURL = 'javascript:alert("hello")';
+
 }
+
 

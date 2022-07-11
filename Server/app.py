@@ -2,7 +2,6 @@ from flask import Flask
 from flask_restful import Api
 from flask_cors import CORS
 
-import routes
 from routes import initialize_routes
 from resources.db import initialize_db
 
@@ -16,11 +15,4 @@ CORS(app)
 initialize_db(app)
 initialize_routes(api)
 
-@app.route('/')
-def show_app():
-    return routes.initialize_routes()
-
-# app.run(debug=True)
-
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port='8000', debug=True)
+app.run(debug=True)

@@ -6,7 +6,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   templateUrl: './signup.component.html',
   styleUrls: ['./signup.component.css']
 })
-export class SignupComponent {
+export class SignupComponent implements OnInit{
   title='registrationform'
   registerForm!: FormGroup;
   submitted = false;
@@ -32,6 +32,6 @@ export class SignupComponent {
       return;
     }
  
-    alert('SUCCESS!!')
+    alert('SUCCESS!!');
   }
 }
